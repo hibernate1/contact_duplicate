@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+   
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+       
+        android:layout_marginRight="5dip"
+        android:background="#EEEEEE"
+        android:padding="3dip" >
+
+        <TextView
+            android:id="@+id/delete_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center"
+            android:text="M"
+             android:background="@drawable/textdesign"
+            android:gravity="center"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <!-- delete_name Of Song -->
+
+    <TextView
+        android:id="@+id/delete_name"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+ 
+    
+
+<TextView
+        android:id="@+id/delete_from_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delete_name"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Click to  Check and ..."
+        android:textColor="#FF0000"
+        android:textSize="14dip" />
+    
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    xmlns:ads="http://schemas.android.com/apk/res-auto" 
+    tools:context="com.tos.contact_duplicacy.MainActivity" >
+
+    <TextView
+        android:id="@+id/account_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cont_no"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Total Contact"
+         />
+
+    <TextView
+        android:id="@+id/cont_no"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        
+        android:layout_marginTop="21dp"
+        android:background="@drawable/txt"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:text="Text"
+        android:textColor="#FF0000"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/margeAll"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/account_flag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonpress"
+        android:text="Check Duplicity"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+         />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+         ads:adSize="BANNER"
+         
+         
+        ads:adUnitId="ca-app-pub-2623420051674563/4708863531"
+        >
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

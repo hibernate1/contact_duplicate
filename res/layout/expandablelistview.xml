@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0f2f1"
+    
+    tools:context="com.javapapers.android.expandablelistview.app.MainActivity">
+
+    <Button
+        android:id="@+id/operation"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonpress"
+        android:layout_alignLeft="@+id/expandableListView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/expandableListView"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:text="Operation " />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/operation"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        
+        android:divider="#000000"
+        android:dividerHeight="0.5dp"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" >
+
+    </ExpandableListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:background="@drawable/operation"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/expandableListView"
+        android:text="Result"
+        android:layout_marginBottom="30dp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

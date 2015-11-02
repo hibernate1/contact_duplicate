@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/buttonsave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        
+        android:text="Save"
+        />
+
+    <TextView
+        android:id="@+id/edit_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#2989DD"
+        android:gravity="center"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_above="@id/buttonsave"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_phone"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="horizontal" >
+
+        <!-- ListRow Left sied Thumbnail image -->
+
+        
+
+        <!-- Title Of Song -->
+
+
+        <!-- edit_phone_11_11 Name -->
+
+
+        <!-- Rightend Duration -->
+
+
+        <!-- Rightend Arrow -->
+
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dip"
+           
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#2989DD"
+            
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/thumbnail"
+            android:text="Merged Result" />
+
+        <TextView
+            android:id="@+id/textView176"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dip"
+            android:background="#2989DD"
+            android:layout_height="30dip"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/list_image_delte"
+            android:text="Bellow Contact(s) will be Deleted" />
+
+        <TextView
+            android:id="@+id/edit_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duration"
+            android:layout_toRightOf="@+id/list_image_delte"
+            android:paddingLeft="10dip"
+            android:textColor="#343434"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:id="@+id/bulidtool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/title"
+            android:src="@drawable/ic_build_black_24dp"
+            android:tint="#10bcc9" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/duration"
+            android:layout_below="@+id/textView2"
+            android:paddingLeft="10dip"
+            android:text="Rihanna "
+            android:textColor="#828282"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/list_image_delte"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:background="@drawable/textdesign"
+            android:gravity="center"
+            android:text="M"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edit_email"
+            android:layout_below="@+id/title"
+            android:paddingLeft="10dip"
+            android:text="Save in device contact"
+            android:textSize="14dip"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lvA"
+            android:divider="@drawable/list_divider" android:dividerHeight="1px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView176" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
